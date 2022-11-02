@@ -1,18 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-// import { TextField } from '../../../CommonFieldComponent/FormFields';
-import {
-  Grid,
-  Typography,
-  Button,
-  Card,
-  CardContent,
-  Box,
-} from '@mui/material';
-// import ImgCrop from 'antd-img-crop';
-import { Upload } from 'antd';
-import { makeStyles } from '@material-ui/styles';
+
 import { API_URL, VIEWDOCTORLOCATION, EDITDOCTORLOCATION  } from '../../../../../Apiconst/Apiconst';
 // components
 import { Link as RouterLink, useHistory, useLocation } from 'react-router-dom';

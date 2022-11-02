@@ -1,18 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-// import { TextField } from '../../../CommonFieldComponent/FormFields';
-import {
-  Grid,
-  Typography,
-  Button,
-  Card,
-  CardContent,
-  Box,
-} from '@mui/material';
-// import ImgCrop from 'antd-img-crop';
-import { Upload } from 'antd';
-import { makeStyles } from '@material-ui/styles';
 import { API_URL, GETUSER, EDITUSER } from '../../../../Apiconst/Apiconst';
 // components
 import { Link as RouterLink, useHistory, useLocation } from 'react-router-dom';
@@ -29,21 +17,7 @@ import { Link } from 'react-router-dom';
 import { yupResolver } from '@hookform/resolvers/yup';
 // import Loader from '../../../CommonFieldComponent/Loader';
 
-const useStyles = makeStyles((theme) => ({
-  tableOverflow: {
-    overflow: 'auto',
-  },
-  submit: {
-    top: '17px',
-  },
-  avatarpreview: {
-    width: '136px',
-    height: '131px',
-  },
-  svg: {
-    display: 'noneimportant',
-  },
-}));
+
 
 export default function EditUser({}) {
   const history = useHistory();

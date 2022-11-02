@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Select from 'react-select';
-import { Button, TextField } from '@mui/material';
-import { Upload } from 'antd';
-import { makeStyles } from '@material-ui/styles';
 import { API_URL, RATING, VIEWALLDOCTOR } from '../../../../Apiconst/Apiconst';
 // components
 import { Link as RouterLink, useLocation } from 'react-router-dom';

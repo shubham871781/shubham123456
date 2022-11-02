@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useLocation, usehistory } from 'react-router-dom';
 import { TOKEN } from '../../InnerComponent/Route/index';
 import DoctorRegistration from '../Register/DoctorRegistration/DoctorRegistration';
-import { Box, Button, Typography, Modal } from '@mui/material';
+// import { Box, Button, Typography, Modal } from '@mui/material';
 
 const style = {
   position: 'absolute',
@@ -29,7 +29,7 @@ function Header() {
   }
   return (
     <div>
-      {locationpath === '/modal-register' ||
+      {/* {locationpath === '/modal-register' ||
       locationpath === '/doctor-registration' ||
       locationpath === '/' ||
       locationpath === '/user-registration' ? (
@@ -68,7 +68,7 @@ function Header() {
           )}
         </>
       ) : (
-        <>
+        <> */}
          
             <header className='main-header'>
               <div className='d-flex align-items-center logo-box justify-content-start'>
@@ -291,8 +291,8 @@ function Header() {
               </nav>
             </header>
          
-        </>
-      )}
+        {/* </> */}
+      {/* )} */}
     </div>
   );
 }

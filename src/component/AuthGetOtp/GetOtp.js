@@ -1,17 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { TextField } from '../../CommonFieldComponent/FormFields';
-import {
-  Grid,
-  Typography,
-  Button,
-  Card,
-  CardContent,
-  Box,
-} from '@mui/material';
-// import ImgCrop from 'antd-img-crop';
-import { Upload } from 'antd';
-import { makeStyles } from '@material-ui/styles';
+
+
 // components
 import { Link, useHistory } from 'react-router-dom';
 import Page from '../../component/Page';
@@ -22,32 +12,17 @@ import { useForm } from 'react-hook-form';
 import * as Yup from 'yup';
 import { SectionWrapperStyled } from '../Auth/LoginVerificationStyle';
 import { API_URL, GETOTP, USERREGISTRATION } from '../../Apiconst/Apiconst';
-import { red } from '@mui/material/colors';
 import VerifyOtp from './VerifyOtp';
 import VerifyOtpByEmail from './Common/VerifyOtpByEmail';
 import Modal from '../../CommonComponent/Modal';
 import { yupResolver } from '@hookform/resolvers/yup';
 
-const useStyles = makeStyles((theme) => ({
-  tableOverflow: {
-    overflow: 'auto',
-  },
-  submit: {
-    top: '17px',
-  },
-  avatarpreview: {
-    width: '136px',
-    height: '131px',
-  },
-  svg: {
-    display: 'noneimportant',
-  },
-}));
+
 
 function GetOtp() {
   const history = useHistory();
   const success = () => {};
-  const classes = useStyles();
+
   const [userRequest, setUserRequest] = useState([]);
   const [isShown, setIsShown] = useState(false);
   const [isShown1, setIsShown1] = useState(false);

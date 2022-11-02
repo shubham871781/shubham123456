@@ -1,17 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { TextField } from '../../../CommonFieldComponent/FormFields';
-import {
-  Grid,
-  Typography,
-  Button,
-  Card,
-  CardContent,
-  Box,
-} from '@mui/material';
-// import ImgCrop from 'antd-img-crop';
-import { Upload } from 'antd';
-import { makeStyles } from '@material-ui/styles';
+
+
 // components
 import { useLocation, useHistory } from 'react-router-dom';
 import Page from '../../../component/Page';

@@ -1,6 +1,5 @@
 // import React, { useState, useEffect } from 'react';
 // import axios from 'axios';
-// import { makeStyles } from '@material-ui/styles';
 // import {
 //   API_URL,
 //   BOOKAPPOINTMENT,
@@ -327,7 +326,7 @@
 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { makeStyles } from '@material-ui/styles';
+
 import {
   API_URL,
   BOOKAPPOINTMENT,

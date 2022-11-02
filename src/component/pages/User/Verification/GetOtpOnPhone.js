@@ -1,20 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-// import { TextField } from '../../CommonFieldComponent/FormFields';
-// import {
-//   Grid,
-//   Typography,
-//   Button,
-//   Card,
-//   CardContent,
-//   Box,
-// } from '@mui/material';
-// import ImgCrop from 'antd-img-crop';
-import { Upload } from 'antd';
-import { makeStyles } from '@material-ui/styles';
+
+
 // components
 import { Link, useHistory } from 'react-router-dom';
-// import Page from '../../component/Page';
+
 import { useFormik } from 'formik';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -22,21 +12,7 @@ import * as Yup from 'yup';
 import { API_URL, GETOTP } from '../../../../Apiconst/Apiconst';
 import { SectionWrapperStyled } from '../../../Auth/LoginVerificationStyle';
 
-// const useStyles = makeStyles((theme) => ({
-//   tableOverflow: {
-//     overflow: 'auto',
-//   },
-//   submit: {
-//     top: '17px',
-//   },
-//   avatarpreview: {
-//     width: '136px',
-//     height: '131px',
-//   },
-//   svg: {
-//     display: 'noneimportant',
-//   },
-// }));
+
 function GetOtpOnPhone() {
   const history = useHistory();
   const success = () => {};
