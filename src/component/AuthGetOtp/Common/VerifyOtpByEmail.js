@@ -19,7 +19,7 @@ import { SectionWrapperStyled } from '../../Auth/LoginVerificationStyle';
 function VerifyOtpByEmail({handleClose, email}) {
   const history = useHistory();
   const success = () => {};
-  const classes = useStyles();
+
 
   const [userRequest, setUserRequest] = useState([]);
   const [isShown, setIsShown] = useState(false);
