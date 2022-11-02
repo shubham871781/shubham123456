@@ -26,7 +26,7 @@ const Tab = styled.button`
 const ButtonGroup = styled.div`
   display: flex;
   align-items: center;
-    justify-content: end;
+    justify-content: center;
     margin-top : 20px
    
    

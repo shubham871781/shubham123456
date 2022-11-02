@@ -70,50 +70,6 @@ function LoginFrom() {
 
   return (
     <>
-      {/* <div className='container'>
-        <form id='login' onSubmit={formik.handleSubmit}>
-          <p>Enter your phone number:</p>
-          <input
-            id='phone'
-            type='tel'
-            name='phone'
-            {...formik.getFieldProps('phone')}
-          />
-          {isShown && isShown === true ? (
-            <>
-              <button
-                data-toggle='modal'
-                onClick={() => addOtp()}
-                type='button'
-                className='btn btn-outline-success Verify_Otp_btn'
-              >
-                Verify-Otp
-              </button>
-              {verifyOtp && (
-                <Modal
-                  hideIcon={true}
-                  handleClose={closeOtp}
-                  className='customWidth otp_box'
-                >
-                  <LoginVerification
-                    handleClose={closeOtp}
-                    phoneNumber={phoneNumber}
-                  />
-                </Modal>
-              )}
-            </>
-          ) : (
-            <></>
-          )}
-          <div className='box-footer d-flex justify-content-center'>
-            <Link to='/login'>Login By Email</Link>
-            <Link to='/tab'>Sign-Up</Link>
-            <button type='submit' className='btn btn-primary Verify_Otp_btn'>
-              <i className='ti-save-alt'></i> Submit
-            </button>
-          </div>
-        </form>
-      </div> */}
       <section className='back'>
   <div className='row justify-content-center '>
               <div className='col-md-12 col-12 login_box'>
@@ -126,6 +82,7 @@ function LoginFrom() {
  
   <input
   style={mystyle}
+           placeholder='Enter your Number'
             id='phone'
             type='tel'
             name='phone'

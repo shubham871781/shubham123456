@@ -23,7 +23,7 @@ import * as Yup from 'yup';
 // import { SectionWrapperStyled } from './GetOtpFormStyle';
 import { API_URL, VERIFYOTP } from '../../../Apiconst/Apiconst';
 import { SectionWrapperStyled } from '../LoginVerificationStyle';
-
+import {login} from '../../../InnerComponent/Route/index'
 
 
 function LoginVerificationEmail({email}) {
@@ -50,9 +50,16 @@ function LoginVerificationEmail({email}) {
       .then((response) => {
         if (response.data.status === 200) {
           success(toast.success(response.data.message));
-          localStorage.setItem('token', 'user');
-          localStorage.setItem('token_key', response.data.response[0].token);
+          const token = response.data.response[0].role_name;
+          const token_key = response.data.response[0].token;
+          login(token, token_key );
+          if(response.data.response[0].role_name === 'user') {
           window.location.href = '/dashboard-user'
+          }else if(response.data.response[0].role_name === 'doctor'){
+          window.location.href = '/dashboard-doctor'
+          }else if(response.data.response[0].role_name === 'admin'){
+          window.location.href = '/dashboard-admin'
+          }
         } else {
           history.push('/login-verfication-email');
           success(toast.success(response.data.message));

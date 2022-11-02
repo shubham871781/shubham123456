@@ -129,13 +129,14 @@ function GetOtp() {
                 setIsShown1(false);
               }
             });
-
+            const url2 = `${API_URL}/${GETOTP}`;
+            var bodyFormData = new FormData();
           bodyFormData.append('section', 'registration');
           bodyFormData.append('phone_or_email', 'phone');
           bodyFormData.append('phone', values.phone);
           setphonenumber(values.phone);
           axios
-            .post(url1, bodyFormData, {
+            .post(url2, bodyFormData, {
               headers: {
                 'Content-Type': 'multipart/form-data',
               },

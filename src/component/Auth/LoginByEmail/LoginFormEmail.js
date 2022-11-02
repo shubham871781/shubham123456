@@ -123,6 +123,7 @@ function LoginFrom() {
             id='email'
             type='tel'
             name='email'
+            placeholder='Enter your email'
             {...formik.getFieldProps('email')}
           />
           
